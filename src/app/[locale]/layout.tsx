@@ -14,6 +14,14 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+// Rendu dynamique (SSR à la demande) pour tout le site : contourne une
+// instabilité de la génération de pages statiques observée uniquement sur
+// l'infra de build Vercel (échecs intermittents et déterministes sur des
+// pages différentes selon la position de génération, non reproductibles en
+// local). Le contenu reste servi en HTML pré-rendu côté serveur à chaque
+// requête — aucun impact sur le SEO, seulement sur le moment du rendu.
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({
   params,
 }: {
