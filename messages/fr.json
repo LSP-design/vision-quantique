@@ -1,0 +1,342 @@
+{
+  "common": {
+    "companyName": "Électricité Vision Quantique",
+    "phone": "514 347-6563",
+    "requestQuote": "Demander une soumission gratuite",
+    "contactUs": "Nous joindre",
+    "learnMore": "En savoir plus",
+    "callUs": "Appelez-nous",
+    "masterElectrician": "Maître Électricien licencié CMEQ",
+    "serviceArea": "Grand Montréal et environs",
+    "sectors": "Résidentiel · Commercial · Industriel"
+  },
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "residential": "Résidentiel",
+    "commercial": "Commercial",
+    "industrial": "Industriel",
+    "about": "À propos",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "switchLocale": "English"
+  },
+  "home": {
+    "meta": {
+      "title": "Électricité Vision Quantique | Maître Électricien CMEQ — Grand Montréal",
+      "description": "Maître Électricien certifié CMEQ au Grand Montréal. Installations électriques résidentielles, commerciales et industrielles sûres et conformes. Soumission gratuite : 514 347-6563."
+    },
+    "hero": {
+      "badge": "Maître Électricien · Membre CMEQ",
+      "title": "Des installations électriques sûres et certifiées",
+      "subtitle": "Résidentiel, commercial et industriel — Électricité Vision Quantique met la rigueur d'un Maître Électricien licencié CMEQ au service de vos projets, partout dans le Grand Montréal.",
+      "ctaPrimary": "Demander une soumission gratuite",
+      "ctaSecondary": "Nous joindre",
+      "phoneIntro": "Parlez directement à un Maître Électricien"
+    },
+    "trustBar": {
+      "cmeq": "Maître Électricien CMEQ",
+      "sectors": "Résidentiel · Commercial · Industriel",
+      "quotes": "Soumissions gratuites",
+      "experience": "Plus de 10 ans d'expérience"
+    },
+    "services": {
+      "title": "Nos services",
+      "subtitle": "Trois secteurs, une même exigence : des travaux électriques précis, sécuritaires et conformes au Code de construction du Québec.",
+      "residential": {
+        "title": "Résidentiel",
+        "description": "Mise aux normes, panneaux électriques, éclairage, bornes de recharge VE, rénovations et dépannage pour votre maison."
+      },
+      "commercial": {
+        "title": "Commercial",
+        "description": "Installations et mises aux normes de commerces, éclairage commercial, entretien préventif et mise à niveau de panneaux."
+      },
+      "industrial": {
+        "title": "Industriel",
+        "description": "Installations industrielles, systèmes triphasés, raccordement de machinerie et maintenance conforme CNESST."
+      }
+    },
+    "why": {
+      "title": "Pourquoi choisir un Maître Électricien CMEQ ?",
+      "subtitle": "En électricité, la crédibilité n'est pas un luxe — c'est une question de sécurité. Voici ce que la licence CMEQ garantit à chaque client.",
+      "license": {
+        "title": "Licence officielle",
+        "description": "Entrepreneur électricien licencié, membre de la Corporation des Maîtres Électriciens du Québec (CMEQ)."
+      },
+      "insurance": {
+        "title": "Assurance et protection",
+        "description": "Travaux couverts par les assurances et les garanties prévues par la réglementation québécoise."
+      },
+      "warranty": {
+        "title": "Garantie des travaux",
+        "description": "Des installations vérifiées, testées et garanties — la tranquillité d'esprit incluse dans chaque projet."
+      },
+      "code": {
+        "title": "Conformité au Code",
+        "description": "Chaque intervention respecte le Code de construction du Québec, chapitre V — Électricité."
+      }
+    },
+    "process": {
+      "title": "Comment ça marche",
+      "subtitle": "Un processus simple et transparent, de votre premier appel à la mise sous tension.",
+      "step1": {
+        "title": "Contact",
+        "description": "Appelez-nous ou remplissez le formulaire — nous vous répondons rapidement."
+      },
+      "step2": {
+        "title": "Évaluation",
+        "description": "Nous analysons vos besoins sur place ou sur plans, avec l'œil d'un Maître Électricien."
+      },
+      "step3": {
+        "title": "Soumission",
+        "description": "Vous recevez une soumission claire, détaillée et gratuite — sans surprise."
+      },
+      "step4": {
+        "title": "Réalisation",
+        "description": "Travaux exécutés selon les normes, vérifiés et garantis. Vous êtes branché en toute sécurité."
+      }
+    },
+    "testimonials": {
+      "title": "Ce que nos clients disent",
+      "subtitle": "La confiance se gagne un projet à la fois."
+    },
+    "finalCta": {
+      "title": "Un projet électrique en tête ?",
+      "subtitle": "Obtenez l'avis d'un Maître Électricien certifié CMEQ. Soumission gratuite, réponse rapide.",
+      "cta": "Demander une soumission",
+      "or": "ou appelez au"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services d'électricien — Résidentiel, Commercial, Industriel",
+      "description": "Découvrez les services d'Électricité Vision Quantique : électricité résidentielle, commerciale et industrielle au Grand Montréal, par un Maître Électricien CMEQ."
+    },
+    "title": "Nos services",
+    "subtitle": "De la prise de courant au système triphasé, chaque intervention est réalisée avec la précision et la rigueur d'un Maître Électricien licencié CMEQ.",
+    "viewDetails": "Voir les détails",
+    "residential": {
+      "title": "Électricité résidentielle",
+      "description": "Votre maison mérite une installation électrique fiable et sécuritaire. Mise aux normes, panneaux, éclairage, bornes de recharge et plus."
+    },
+    "commercial": {
+      "title": "Électricité commerciale",
+      "description": "Des solutions électriques qui suivent le rythme de votre entreprise : installations, mises aux normes et entretien préventif."
+    },
+    "industrial": {
+      "title": "Électricité industrielle",
+      "description": "Puissance, fiabilité et conformité pour vos opérations industrielles : triphasé, machinerie et maintenance planifiée."
+    },
+    "ctaTitle": "Besoin d'un électricien certifié ?",
+    "ctaSubtitle": "Parlez-nous de votre projet — la soumission est gratuite."
+  },
+  "residential": {
+    "meta": {
+      "title": "Électricien résidentiel — Grand Montréal",
+      "description": "Électricien résidentiel certifié CMEQ : mise aux normes, panneau électrique, borne de recharge VE, éclairage, inspection pré-achat et dépannage au Grand Montréal."
+    },
+    "badge": "Résidentiel",
+    "title": "Électricité résidentielle",
+    "subtitle": "Une maison sécuritaire commence par une installation électrique impeccable. Nous intervenons dans tout le Grand Montréal avec la garantie d'un travail de Maître Électricien.",
+    "servicesTitle": "Ce que nous faisons pour votre maison",
+    "items": {
+      "upgrade": {
+        "title": "Mise aux normes",
+        "description": "Mise à jour de votre installation selon le Code de construction du Québec — idéale pour les maisons plus anciennes."
+      },
+      "panels": {
+        "title": "Panneaux électriques",
+        "description": "Remplacement et mise à niveau de panneaux (100A, 200A), remplacement de panneaux à fusibles."
+      },
+      "outlets": {
+        "title": "Prises et interrupteurs",
+        "description": "Ajout, déplacement et remplacement de prises, interrupteurs, gradateurs et prises DDFT."
+      },
+      "lighting": {
+        "title": "Éclairage",
+        "description": "Conception et installation d'éclairage intérieur et extérieur, luminaires encastrés, DEL."
+      },
+      "ev": {
+        "title": "Bornes de recharge VE",
+        "description": "Installation certifiée de bornes de recharge pour véhicules électriques, à la maison."
+      },
+      "renovations": {
+        "title": "Rénovations",
+        "description": "Câblage complet pour agrandissements, sous-sols, cuisines et salles de bain."
+      },
+      "inspection": {
+        "title": "Inspection pré-achat",
+        "description": "Évaluation professionnelle de l'installation électrique avant l'achat d'une propriété."
+      },
+      "repairs": {
+        "title": "Dépannage",
+        "description": "Diagnostic et réparation de pannes, disjoncteurs qui sautent, prises défectueuses."
+      }
+    },
+    "ctaTitle": "Un projet pour votre maison ?",
+    "ctaSubtitle": "Obtenez une soumission gratuite d'un Maître Électricien certifié CMEQ."
+  },
+  "commercial": {
+    "meta": {
+      "title": "Électricien commercial — Grand Montréal",
+      "description": "Électricien commercial certifié CMEQ : installations, mise aux normes de commerces, éclairage commercial, entretien préventif et mise à niveau de panneaux au Grand Montréal."
+    },
+    "badge": "Commercial",
+    "title": "Électricité commerciale",
+    "subtitle": "Votre commerce ne peut pas se permettre de panne. Nous concevons, installons et entretenons des systèmes électriques fiables, conformes et efficaces.",
+    "servicesTitle": "Nos services pour les entreprises",
+    "items": {
+      "installations": {
+        "title": "Installations commerciales",
+        "description": "Câblage et installations complètes pour bureaux, commerces de détail et restaurants."
+      },
+      "upgrade": {
+        "title": "Mise aux normes de commerces",
+        "description": "Conformité au Code de construction du Québec pour locaux commerciaux, nouveaux ou existants."
+      },
+      "lighting": {
+        "title": "Éclairage commercial",
+        "description": "Éclairage de vente, d'accentuation et de sécurité ; conversion DEL pour réduire vos coûts d'énergie."
+      },
+      "maintenance": {
+        "title": "Entretien préventif",
+        "description": "Programmes d'inspection et d'entretien pour prévenir les pannes avant qu'elles n'arrivent."
+      },
+      "panels": {
+        "title": "Mise à niveau de panneaux",
+        "description": "Augmentation de capacité et remplacement de panneaux pour suivre la croissance de votre entreprise."
+      }
+    },
+    "ctaTitle": "Votre commerce a besoin de courant fiable ?",
+    "ctaSubtitle": "Discutons de vos besoins — soumission gratuite et sans engagement."
+  },
+  "industrial": {
+    "meta": {
+      "title": "Électricien industriel — Grand Montréal",
+      "description": "Électricien industriel certifié CMEQ : installations industrielles, systèmes triphasés, raccordement de machinerie, maintenance et conformité CNESST au Grand Montréal."
+    },
+    "badge": "Industriel",
+    "title": "Électricité industrielle",
+    "subtitle": "En milieu industriel, la marge d'erreur est nulle. Nous livrons des installations robustes, conformes et pensées pour la continuité de vos opérations.",
+    "servicesTitle": "Nos services industriels",
+    "items": {
+      "installations": {
+        "title": "Installations industrielles",
+        "description": "Distribution électrique, câblage haute capacité et infrastructures pour usines et entrepôts."
+      },
+      "threephase": {
+        "title": "Systèmes triphasés",
+        "description": "Installation et mise à niveau de systèmes triphasés 347/600V pour équipements industriels."
+      },
+      "machinery": {
+        "title": "Raccordement de machinerie",
+        "description": "Branchement, mise en service et déplacement de machinerie et d'équipements de production."
+      },
+      "maintenance": {
+        "title": "Maintenance industrielle",
+        "description": "Maintenance planifiée et corrective pour minimiser les arrêts de production."
+      },
+      "compliance": {
+        "title": "Conformité CNESST / Code électrique",
+        "description": "Installations conformes aux exigences de la CNESST et au chapitre V — Électricité du Code de construction."
+      }
+    },
+    "ctaTitle": "Un projet industriel à planifier ?",
+    "ctaSubtitle": "Parlez directement à un Maître Électricien — soumission gratuite."
+  },
+  "about": {
+    "meta": {
+      "title": "À propos — Leroy Joseph, Maître Électricien CMEQ",
+      "description": "Découvrez Électricité Vision Quantique et son fondateur Leroy Joseph, Maître Électricien certifié CMEQ. Sécurité, précision et transparence au service du Grand Montréal."
+    },
+    "badge": "À propos",
+    "title": "Une vision claire de l'électricité bien faite",
+    "intro": "Électricité Vision Quantique, c'est la rencontre entre le savoir-faire d'un Maître Électricien certifié et une conviction simple : chaque installation électrique mérite une précision absolue.",
+    "ownerTitle": "Leroy Joseph, Maître Électricien",
+    "ownerBio1": "Fondateur d'Électricité Vision Quantique, Leroy Joseph est Maître Électricien et membre de la Corporation des Maîtres Électriciens du Québec (CMEQ). Cette certification — obligatoire pour exercer comme entrepreneur électricien au Québec — atteste d'une formation rigoureuse, d'une connaissance approfondie du Code de construction et d'un engagement continu envers la sécurité.",
+    "ownerBio2": "Du remplacement d'un panneau résidentiel au raccordement d'équipements industriels triphasés, Leroy aborde chaque projet avec la même exigence : un travail précis, propre, conforme et durable.",
+    "missionTitle": "Notre mission",
+    "missionText": "Offrir aux propriétaires et aux entreprises du Grand Montréal des installations électriques d'une fiabilité irréprochable, livrées avec transparence et professionnalisme.",
+    "values": {
+      "title": "Nos valeurs",
+      "safety": {
+        "title": "Sécurité",
+        "description": "La sécurité des personnes et des bâtiments passe avant tout. Aucun compromis, jamais."
+      },
+      "precision": {
+        "title": "Précision",
+        "description": "Comme notre nom l'indique : une vision quantique du métier — chaque détail compte, chaque connexion est vérifiée."
+      },
+      "transparency": {
+        "title": "Transparence",
+        "description": "Des soumissions claires, des prix justes et une communication honnête du début à la fin."
+      }
+    },
+    "cmeqTitle": "La certification CMEQ, votre garantie",
+    "cmeqText": "Faire affaire avec un membre de la CMEQ, c'est la garantie d'un entrepreneur licencié, assuré et encadré par la corporation qui régit le métier d'électricien au Québec depuis 1950.",
+    "ctaTitle": "Travaillons ensemble",
+    "ctaSubtitle": "Confiez votre projet à un Maître Électricien qui prend la sécurité au sérieux."
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — Soumission gratuite | Électricité Vision Quantique",
+      "description": "Contactez Électricité Vision Quantique pour une soumission gratuite. Maître Électricien CMEQ au Grand Montréal : 514 347-6563 · leroyjoseph@outlook.com."
+    },
+    "badge": "Contact",
+    "title": "Parlons de votre projet",
+    "subtitle": "Remplissez le formulaire ou appelez-nous directement — nous répondons rapidement à toutes les demandes de soumission.",
+    "info": {
+      "title": "Coordonnées",
+      "phoneLabel": "Téléphone",
+      "emailLabel": "Courriel",
+      "areaLabel": "Zone desservie",
+      "area": "Grand Montréal et environs",
+      "hoursLabel": "Heures d'ouverture",
+      "hoursWeek": "Lundi – Vendredi : 7 h à 17 h",
+      "hoursSat": "Samedi : sur rendez-vous",
+      "hoursSun": "Dimanche : fermé"
+    },
+    "form": {
+      "title": "Demande de soumission",
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "phone": "Téléphone",
+      "phonePlaceholder": "514 000-0000",
+      "email": "Courriel",
+      "emailPlaceholder": "vous@exemple.com",
+      "serviceType": "Type de service",
+      "serviceOptions": {
+        "residential": "Résidentiel",
+        "commercial": "Commercial",
+        "industrial": "Industriel",
+        "other": "Autre / je ne sais pas"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet ou votre problème électrique…",
+      "submit": "Envoyer ma demande",
+      "sending": "Envoi en cours…",
+      "success": "Merci ! Votre demande a bien été envoyée. Nous vous contacterons rapidement.",
+      "error": "Une erreur est survenue. Veuillez réessayer ou nous appeler directement.",
+      "validation": {
+        "nameRequired": "Veuillez entrer votre nom.",
+        "phoneRequired": "Veuillez entrer votre numéro de téléphone.",
+        "emailInvalid": "Veuillez entrer un courriel valide.",
+        "messageRequired": "Veuillez décrire votre projet."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Maître Électricien certifié CMEQ — installations résidentielles, commerciales et industrielles sûres et conformes au Grand Montréal.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "cmeqNote": "Membre de la Corporation des Maîtres Électriciens du Québec",
+    "rights": "Tous droits réservés."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous cherchez n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
+  }
+}

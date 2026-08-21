@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #0b1f3a;
+  --color-brand-navy-light: #13294b;
+  --color-brand-electric: #0ea5e9;
+  --color-brand-electric-dark: #0284c7;
+  --color-brand-amber: #f5a623;
+  --color-brand-amber-dark: #d98e0f;
+  --color-brand-cream: #f7f9fc;
+  --color-brand-dark: #101418;
+
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-brand-dark);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+/* Motif de circuit électrique discret pour le hero */
+.circuit-bg {
+  background-image: linear-gradient(
+      rgba(14, 165, 233, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(14, 165, 233, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+::selection {
+  background-color: var(--color-brand-electric);
+  color: #ffffff;
+}

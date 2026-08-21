@@ -1,0 +1,342 @@
+{
+  "common": {
+    "companyName": "Électricité Vision Quantique",
+    "phone": "514 347-6563",
+    "requestQuote": "Request a free quote",
+    "contactUs": "Contact us",
+    "learnMore": "Learn more",
+    "callUs": "Call us",
+    "masterElectrician": "CMEQ Licensed Master Electrician",
+    "serviceArea": "Greater Montreal and surrounding areas",
+    "sectors": "Residential · Commercial · Industrial"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "industrial": "Industrial",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLocale": "Français"
+  },
+  "home": {
+    "meta": {
+      "title": "Électricité Vision Quantique | CMEQ Master Electrician — Greater Montreal",
+      "description": "CMEQ-certified Master Electrician in Greater Montreal. Safe, code-compliant residential, commercial and industrial electrical installations. Free quote: 514 347-6563."
+    },
+    "hero": {
+      "badge": "Master Electrician · CMEQ Member",
+      "title": "Safe, certified electrical installations",
+      "subtitle": "Residential, commercial and industrial — Électricité Vision Quantique brings the rigour of a CMEQ-licensed Master Electrician to your projects, throughout Greater Montreal.",
+      "ctaPrimary": "Request a free quote",
+      "ctaSecondary": "Contact us",
+      "phoneIntro": "Speak directly with a Master Electrician"
+    },
+    "trustBar": {
+      "cmeq": "CMEQ Master Electrician",
+      "sectors": "Residential · Commercial · Industrial",
+      "quotes": "Free quotes",
+      "experience": "10+ years of experience"
+    },
+    "services": {
+      "title": "Our services",
+      "subtitle": "Three sectors, one standard: precise, safe electrical work that complies with the Quebec Construction Code.",
+      "residential": {
+        "title": "Residential",
+        "description": "Code upgrades, electrical panels, lighting, EV charging stations, renovations and troubleshooting for your home."
+      },
+      "commercial": {
+        "title": "Commercial",
+        "description": "Commercial installations and code upgrades, commercial lighting, preventive maintenance and panel upgrades."
+      },
+      "industrial": {
+        "title": "Industrial",
+        "description": "Industrial installations, three-phase systems, machinery hook-ups and CNESST-compliant maintenance."
+      }
+    },
+    "why": {
+      "title": "Why choose a CMEQ Master Electrician?",
+      "subtitle": "In electrical work, credibility isn't a luxury — it's a matter of safety. Here's what the CMEQ licence guarantees every client.",
+      "license": {
+        "title": "Official licence",
+        "description": "Licensed electrical contractor, member of the Corporation des Maîtres Électriciens du Québec (CMEQ)."
+      },
+      "insurance": {
+        "title": "Insurance & protection",
+        "description": "Work covered by the insurance and warranties required under Quebec regulations."
+      },
+      "warranty": {
+        "title": "Guaranteed workmanship",
+        "description": "Installations that are checked, tested and guaranteed — peace of mind included with every project."
+      },
+      "code": {
+        "title": "Code compliance",
+        "description": "Every job complies with the Quebec Construction Code, Chapter V — Electricity."
+      }
+    },
+    "process": {
+      "title": "How it works",
+      "subtitle": "A simple, transparent process, from your first call to power-on.",
+      "step1": {
+        "title": "Contact",
+        "description": "Call us or fill out the form — we'll get back to you quickly."
+      },
+      "step2": {
+        "title": "Assessment",
+        "description": "We assess your needs on site or from plans, with a Master Electrician's eye."
+      },
+      "step3": {
+        "title": "Quote",
+        "description": "You receive a clear, detailed and free quote — no surprises."
+      },
+      "step4": {
+        "title": "Execution",
+        "description": "Work performed to code, verified and guaranteed. You're powered up, safely."
+      }
+    },
+    "testimonials": {
+      "title": "What our clients say",
+      "subtitle": "Trust is earned one project at a time."
+    },
+    "finalCta": {
+      "title": "Have an electrical project in mind?",
+      "subtitle": "Get the opinion of a CMEQ-certified Master Electrician. Free quote, fast response.",
+      "cta": "Request a quote",
+      "or": "or call"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Electrician Services — Residential, Commercial, Industrial",
+      "description": "Discover Électricité Vision Quantique's services: residential, commercial and industrial electrical work in Greater Montreal, by a CMEQ Master Electrician."
+    },
+    "title": "Our services",
+    "subtitle": "From a single outlet to a three-phase system, every job is done with the precision and rigour of a CMEQ-licensed Master Electrician.",
+    "viewDetails": "View details",
+    "residential": {
+      "title": "Residential electrical",
+      "description": "Your home deserves a reliable, safe electrical installation. Code upgrades, panels, lighting, EV chargers and more."
+    },
+    "commercial": {
+      "title": "Commercial electrical",
+      "description": "Electrical solutions that keep pace with your business: installations, code upgrades and preventive maintenance."
+    },
+    "industrial": {
+      "title": "Industrial electrical",
+      "description": "Power, reliability and compliance for your industrial operations: three-phase, machinery and planned maintenance."
+    },
+    "ctaTitle": "Need a certified electrician?",
+    "ctaSubtitle": "Tell us about your project — the quote is free."
+  },
+  "residential": {
+    "meta": {
+      "title": "Residential Electrician — Greater Montreal",
+      "description": "CMEQ-certified residential electrician: code upgrades, electrical panels, EV charging stations, lighting, pre-purchase inspections and repairs in Greater Montreal."
+    },
+    "badge": "Residential",
+    "title": "Residential electrical",
+    "subtitle": "A safe home starts with a flawless electrical installation. We serve all of Greater Montreal with the guarantee of Master Electrician workmanship.",
+    "servicesTitle": "What we do for your home",
+    "items": {
+      "upgrade": {
+        "title": "Code upgrades",
+        "description": "Bringing your installation up to the Quebec Construction Code — ideal for older homes."
+      },
+      "panels": {
+        "title": "Electrical panels",
+        "description": "Panel replacements and upgrades (100A, 200A), fuse panel replacements."
+      },
+      "outlets": {
+        "title": "Outlets & switches",
+        "description": "Adding, moving and replacing outlets, switches, dimmers and GFCI receptacles."
+      },
+      "lighting": {
+        "title": "Lighting",
+        "description": "Design and installation of indoor and outdoor lighting, recessed fixtures, LED."
+      },
+      "ev": {
+        "title": "EV charging stations",
+        "description": "Certified installation of electric vehicle charging stations at home."
+      },
+      "renovations": {
+        "title": "Renovations",
+        "description": "Complete wiring for additions, basements, kitchens and bathrooms."
+      },
+      "inspection": {
+        "title": "Pre-purchase inspection",
+        "description": "Professional assessment of the electrical installation before buying a property."
+      },
+      "repairs": {
+        "title": "Troubleshooting",
+        "description": "Diagnosis and repair of outages, tripping breakers and faulty outlets."
+      }
+    },
+    "ctaTitle": "A project for your home?",
+    "ctaSubtitle": "Get a free quote from a CMEQ-certified Master Electrician."
+  },
+  "commercial": {
+    "meta": {
+      "title": "Commercial Electrician — Greater Montreal",
+      "description": "CMEQ-certified commercial electrician: installations, commercial code upgrades, commercial lighting, preventive maintenance and panel upgrades in Greater Montreal."
+    },
+    "badge": "Commercial",
+    "title": "Commercial electrical",
+    "subtitle": "Your business can't afford downtime. We design, install and maintain reliable, compliant and efficient electrical systems.",
+    "servicesTitle": "Our services for businesses",
+    "items": {
+      "installations": {
+        "title": "Commercial installations",
+        "description": "Complete wiring and installations for offices, retail stores and restaurants."
+      },
+      "upgrade": {
+        "title": "Commercial code upgrades",
+        "description": "Quebec Construction Code compliance for new or existing commercial spaces."
+      },
+      "lighting": {
+        "title": "Commercial lighting",
+        "description": "Retail, accent and safety lighting; LED conversions to cut your energy costs."
+      },
+      "maintenance": {
+        "title": "Preventive maintenance",
+        "description": "Inspection and maintenance programs to prevent outages before they happen."
+      },
+      "panels": {
+        "title": "Panel upgrades",
+        "description": "Capacity increases and panel replacements to keep up with your company's growth."
+      }
+    },
+    "ctaTitle": "Does your business need reliable power?",
+    "ctaSubtitle": "Let's discuss your needs — free, no-obligation quote."
+  },
+  "industrial": {
+    "meta": {
+      "title": "Industrial Electrician — Greater Montreal",
+      "description": "CMEQ-certified industrial electrician: industrial installations, three-phase systems, machinery hook-ups, maintenance and CNESST compliance in Greater Montreal."
+    },
+    "badge": "Industrial",
+    "title": "Industrial electrical",
+    "subtitle": "In an industrial setting, there's no margin for error. We deliver robust, compliant installations built for operational continuity.",
+    "servicesTitle": "Our industrial services",
+    "items": {
+      "installations": {
+        "title": "Industrial installations",
+        "description": "Electrical distribution, high-capacity wiring and infrastructure for plants and warehouses."
+      },
+      "threephase": {
+        "title": "Three-phase systems",
+        "description": "Installation and upgrades of 347/600V three-phase systems for industrial equipment."
+      },
+      "machinery": {
+        "title": "Machinery hook-ups",
+        "description": "Connection, commissioning and relocation of machinery and production equipment."
+      },
+      "maintenance": {
+        "title": "Industrial maintenance",
+        "description": "Planned and corrective maintenance to minimize production downtime."
+      },
+      "compliance": {
+        "title": "CNESST / Electrical Code compliance",
+        "description": "Installations compliant with CNESST requirements and Chapter V — Electricity of the Construction Code."
+      }
+    },
+    "ctaTitle": "An industrial project to plan?",
+    "ctaSubtitle": "Speak directly with a Master Electrician — free quote."
+  },
+  "about": {
+    "meta": {
+      "title": "About — Leroy Joseph, CMEQ Master Electrician",
+      "description": "Meet Électricité Vision Quantique and its founder Leroy Joseph, CMEQ-certified Master Electrician. Safety, precision and transparency serving Greater Montreal."
+    },
+    "badge": "About",
+    "title": "A clear vision of electrical work done right",
+    "intro": "Électricité Vision Quantique is where the expertise of a certified Master Electrician meets a simple conviction: every electrical installation deserves absolute precision.",
+    "ownerTitle": "Leroy Joseph, Master Electrician",
+    "ownerBio1": "Founder of Électricité Vision Quantique, Leroy Joseph is a Master Electrician and member of the Corporation des Maîtres Électriciens du Québec (CMEQ). This certification — mandatory to operate as an electrical contractor in Quebec — attests to rigorous training, deep knowledge of the Construction Code and an ongoing commitment to safety.",
+    "ownerBio2": "From replacing a residential panel to connecting three-phase industrial equipment, Leroy approaches every project with the same standard: precise, clean, compliant and durable work.",
+    "missionTitle": "Our mission",
+    "missionText": "To provide homeowners and businesses across Greater Montreal with impeccably reliable electrical installations, delivered with transparency and professionalism.",
+    "values": {
+      "title": "Our values",
+      "safety": {
+        "title": "Safety",
+        "description": "The safety of people and buildings comes first. No compromises, ever."
+      },
+      "precision": {
+        "title": "Precision",
+        "description": "As our name suggests: a quantum vision of the trade — every detail matters, every connection is verified."
+      },
+      "transparency": {
+        "title": "Transparency",
+        "description": "Clear quotes, fair prices and honest communication from start to finish."
+      }
+    },
+    "cmeqTitle": "The CMEQ certification, your guarantee",
+    "cmeqText": "Working with a CMEQ member means the guarantee of a licensed, insured contractor governed by the corporation that has regulated the electrician trade in Quebec since 1950.",
+    "ctaTitle": "Let's work together",
+    "ctaSubtitle": "Entrust your project to a Master Electrician who takes safety seriously."
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — Free Quote | Électricité Vision Quantique",
+      "description": "Contact Électricité Vision Quantique for a free quote. CMEQ Master Electrician in Greater Montreal: 514 347-6563 · leroyjoseph@outlook.com."
+    },
+    "badge": "Contact",
+    "title": "Let's talk about your project",
+    "subtitle": "Fill out the form or call us directly — we respond quickly to all quote requests.",
+    "info": {
+      "title": "Contact information",
+      "phoneLabel": "Phone",
+      "emailLabel": "Email",
+      "areaLabel": "Service area",
+      "area": "Greater Montreal and surrounding areas",
+      "hoursLabel": "Business hours",
+      "hoursWeek": "Monday – Friday: 7 a.m. to 5 p.m.",
+      "hoursSat": "Saturday: by appointment",
+      "hoursSun": "Sunday: closed"
+    },
+    "form": {
+      "title": "Quote request",
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "phone": "Phone",
+      "phonePlaceholder": "514 000-0000",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "serviceType": "Service type",
+      "serviceOptions": {
+        "residential": "Residential",
+        "commercial": "Commercial",
+        "industrial": "Industrial",
+        "other": "Other / not sure"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Describe your project or electrical issue…",
+      "submit": "Send my request",
+      "sending": "Sending…",
+      "success": "Thank you! Your request has been sent. We'll be in touch shortly.",
+      "error": "Something went wrong. Please try again or call us directly.",
+      "validation": {
+        "nameRequired": "Please enter your name.",
+        "phoneRequired": "Please enter your phone number.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageRequired": "Please describe your project."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "CMEQ-certified Master Electrician — safe, code-compliant residential, commercial and industrial installations in Greater Montreal.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "contact": "Contact",
+    "cmeqNote": "Member of the Corporation des Maîtres Électriciens du Québec",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "back": "Back to home"
+  }
+}
