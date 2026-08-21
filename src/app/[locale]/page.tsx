@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 import {
   ArrowRight,
   Award,
@@ -46,8 +45,7 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-  setRequestLocale(locale);
-
+  
   return <HomeContent />;
 }
 
