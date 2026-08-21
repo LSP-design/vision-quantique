@@ -77,15 +77,10 @@ export default async function LocaleLayout({
                                     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
                                     rel="stylesheet"
                                   />
-                        <JsonLd locale={locale as Locale} />
-                </head>
+                        </head>
               <body className="min-h-screen antialiased">
-                      <NextIntlClientProvider locale={locale} messages={messages}>
-                                <Header />
-                                <main>{children}</main>
-                                <Footer />
-                      </NextIntlClientProvider>
-              </body>
+                      <main>{children}</main>
+                                </body>
         </html>
       );
 }
