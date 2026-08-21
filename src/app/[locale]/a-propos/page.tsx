@@ -11,6 +11,10 @@ import { LogoMark } from "@/components/site/logo";
 import { PageHero } from "@/components/site/page-hero";
 import { Reveal } from "@/components/site/reveal";
 import { CtaSection } from "@/components/site/cta-section";
+// Rendu dynamique (SSR à la demande) plutôt que statique au build :
+// contourne une erreur de prérendu spécifique à l'environnement de build
+// Vercel qui ne se reproduit pas en local (voir historique de déploiement).
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
