@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -56,9 +55,7 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
 
-  // Active le rendu statique pour toutes les pages de ce segment
-  setRequestLocale(locale);
-
+  
   return (
     <html lang={locale}>
       <head>
