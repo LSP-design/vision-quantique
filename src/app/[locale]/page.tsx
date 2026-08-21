@@ -46,7 +46,7 @@ export default async function HomePage({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   
-  return <HomeContent />;
+    return <p>DEBUG TEST OK</p>;
 }
 
 function HomeContent() {
