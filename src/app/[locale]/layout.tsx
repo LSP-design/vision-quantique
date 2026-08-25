@@ -30,20 +30,14 @@ export async function generateMetadata({
     const { locale } = await params;
     if (!hasLocale(routing.locales, locale)) notFound();
 
-  const base = await buildMetadata({
-        locale,
-        namespace: "home",
-        pathname: "/",
-  });
 
-  return {
-        metadataBase: new URL(site.url),
-        ...base,
-        title: {
-          default: base.title as string,
-                template: `%s | ${site.name}`,
-        },
-  };
+      return {
+              metadataBase: new URL(site.url),
+              title: {
+                  default: site.name,
+                        template: `%s | ${site.name}`,
+              },
+      };
 }
 
 export default async function LocaleLayout({
