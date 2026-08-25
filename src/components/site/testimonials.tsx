@@ -28,10 +28,10 @@ export function Testimonials({
   if (testimonials.length === 0) return null;
 
   return (
-    <section className="bg-brand-cream py-20">
+    <section className="bg-brand-paper py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal className="mb-12 text-center">
-          <h2 className="mb-3 text-3xl font-bold text-brand-navy sm:text-4xl">
+          <h2 className="mb-3 text-3xl font-extrabold uppercase text-brand-navy sm:text-4xl">
             {title}
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-brand-dark/70">

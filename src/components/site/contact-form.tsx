@@ -51,7 +51,7 @@ export function ContactForm() {
     return (
       <div
         role="status"
-        className="flex flex-col items-center gap-4 rounded-2xl border border-brand-electric/30 bg-brand-electric/5 p-10 text-center"
+        className="flex flex-col items-center gap-4 border border-brand-electric/30 bg-brand-electric/5 p-10 text-center"
       >
         <CircleCheckBig className="h-12 w-12 text-brand-electric" aria-hidden="true" />
         <p className="text-lg font-semibold text-brand-navy">{t("success")}</p>

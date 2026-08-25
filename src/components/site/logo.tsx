@@ -14,15 +14,9 @@ export function LogoMark({ className }: { className?: string }) {
     >
       <path
         d="M6 6 L16 6 L20 22 L24 6 L34 6 L23 34 L15 34 Z"
-        fill="url(#vq-gradient)"
+        fill="#0D6F9E"
       />
       <path d="M21 14 L28 14 L18 30 L21 20 L15 20 Z" fill="#F5A623" />
-      <defs>
-        <linearGradient id="vq-gradient" x1="6" y1="6" x2="34" y2="34">
-          <stop stopColor="#0EA5E9" />
-          <stop offset="1" stopColor="#0284C7" />
-        </linearGradient>
-      </defs>
     </svg>
   );
 }
@@ -40,7 +34,7 @@ export function Logo({
       <span className="flex flex-col leading-tight">
         <span
           className={cn(
-            "font-display text-lg font-bold tracking-tight",
+            "text-lg font-extrabold uppercase tracking-tight",
             light ? "text-white" : "text-brand-navy"
           )}
           style={{ fontFamily: "var(--font-display)" }}
@@ -49,7 +43,7 @@ export function Logo({
         </span>
         <span
           className={cn(
-            "text-[0.65rem] font-semibold uppercase tracking-[0.2em]",
+            "tech-label text-[0.6rem] font-medium uppercase",
             light ? "text-brand-electric" : "text-brand-electric-dark"
           )}
         >

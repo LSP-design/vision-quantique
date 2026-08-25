@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { ArrowRight, Building2, Factory, Home } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { routing, type AppPathname } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
@@ -38,12 +38,11 @@ function ServicesContent() {
 
   const categories: {
     key: "residential" | "commercial" | "industrial";
-    icon: typeof Home;
     href: AppPathname;
   }[] = [
-    { key: "residential", icon: Home, href: "/services/residentiel" },
-    { key: "commercial", icon: Building2, href: "/services/commercial" },
-    { key: "industrial", icon: Factory, href: "/services/industriel" },
+    { key: "residential", href: "/services/residentiel" },
+    { key: "commercial", href: "/services/commercial" },
+    { key: "industrial", href: "/services/industriel" },
   ];
 
   return (
@@ -56,23 +55,20 @@ function ServicesContent() {
 
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-8">
-          <div className="grid border-t border-brand-navy/10 lg:grid-cols-3">
+          <div className="grid border-t border-brand-navy/12 lg:grid-cols-3">
             {categories.map((category, i) => (
               <Reveal key={category.key} delay={i * 0.08}>
                 <Link
                   href={category.href}
-                  className="group flex h-full flex-col border-b border-brand-navy/10 py-10 pr-8 transition-colors lg:border-b-0 lg:pl-8 lg:first:pl-0 lg:[&:not(:first-child)]:border-l lg:[&:not(:first-child)]:border-brand-navy/10"
+                  className="group flex h-full flex-col border-b border-brand-navy/12 py-10 pr-8 transition-colors lg:border-b-0 lg:pl-8 lg:first:pl-0 lg:[&:not(:first-child)]:border-l lg:[&:not(:first-child)]:border-brand-navy/12"
                 >
                   <span
-                    className="text-sm font-bold text-brand-electric-dark/60"
+                    className="text-6xl font-extrabold text-brand-navy/[0.08] transition-colors group-hover:text-brand-electric/15"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="mt-6 mb-5 inline-flex h-12 w-12 items-center justify-center border border-brand-navy/12 text-brand-navy transition-colors group-hover:border-brand-electric group-hover:text-brand-electric-dark">
-                    <category.icon className="h-5.5 w-5.5" aria-hidden="true" />
-                  </span>
-                  <h2 className="mb-3 text-2xl font-bold text-brand-navy">
+                  <h2 className="-mt-3 mb-3 text-2xl font-extrabold uppercase text-brand-navy">
                     {t(`${category.key}.title`)}
                   </h2>
                   <p className="mb-8 flex-1 leading-relaxed text-brand-dark/65">

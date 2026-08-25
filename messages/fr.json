@@ -33,7 +33,13 @@
       "subtitle": "Résidentiel, commercial et industriel — Électricité Vision Quantique met la rigueur d'un Maître Électricien licencié CMEQ au service de vos projets, partout dans le Grand Montréal.",
       "ctaPrimary": "Demander une soumission gratuite",
       "ctaSecondary": "Nous joindre",
-      "phoneIntro": "Parlez directement à un Maître Électricien"
+      "phoneIntro": "Parlez directement à un Maître Électricien",
+      "sheet": {
+        "label": "Fiche entreprise",
+        "sectors": "Secteurs",
+        "zone": "Zone",
+        "quote": "Soumission"
+      }
     },
     "trustBar": {
       "cmeq": "Maître Électricien CMEQ",

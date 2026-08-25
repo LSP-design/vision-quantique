@@ -47,10 +47,10 @@ function ContactContent() {
         <div className="mx-auto grid max-w-7xl items-start gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-10 xl:px-8">
           {/* Coordonnées */}
           <Reveal className="lg:col-span-4">
-            <h2 className="mb-2 text-xl font-bold text-brand-navy">
+            <h2 className="mb-2 text-xl font-extrabold uppercase text-brand-navy">
               {t("info.title")}
             </h2>
-            <div className="border-t border-brand-navy/10">
+            <div className="border-t border-brand-navy/12">
               <div className="flex items-start gap-4 border-b border-brand-navy/10 py-6">
                 <Phone
                   className="mt-1 h-5 w-5 shrink-0 text-brand-electric-dark"
@@ -130,15 +130,13 @@ function ContactContent() {
 
           {/* Formulaire */}
           <Reveal delay={0.1} className="lg:col-span-8">
-            <div className="border border-brand-navy/10">
-              <div
-                className="h-1 w-full bg-gradient-to-r from-brand-electric via-brand-electric-dark to-brand-amber"
-                aria-hidden="true"
-              />
-              <div className="p-8 sm:p-10">
-                <h2 className="mb-8 text-xl font-bold text-brand-navy">
+            <div className="border border-brand-navy/12">
+              <div className="border-b border-brand-navy/12 px-8 py-4 sm:px-10">
+                <span className="tech-label text-[0.7rem] font-medium uppercase text-brand-dark/45">
                   {t("form.title")}
-                </h2>
+                </span>
+              </div>
+              <div className="p-8 sm:p-10">
                 <ContactForm />
               </div>
             </div>

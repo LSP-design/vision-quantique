@@ -29,17 +29,33 @@ export function Reveal({
     el.style.transitionDelay = `${delay}s`;
     el.classList.add("reveal-hidden");
 
+    const reveal = () => {
+      el.classList.add("reveal-visible");
+      observer.disconnect();
+      clearTimeout(fallback);
+    };
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add("reveal-visible");
-          observer.disconnect();
-        }
+        if (entry.isIntersecting) reveal();
       },
       { rootMargin: "-60px 0px" }
     );
     observer.observe(el);
-    return () => observer.disconnect();
+
+    // Filet de sécurité : garantit que le contenu apparaît même si
+    // l'observer ne se déclenche jamais (capture plein-page sans défilement
+    // réel, outil d'audit, etc.) — jamais de contenu durablement invisible.
+    // Le délai d'échelonnement est annulé pour un affichage immédiat.
+    const fallback = setTimeout(() => {
+      el.style.transitionDelay = "0s";
+      reveal();
+    }, 1200);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(fallback);
+    };
   }, [delay]);
 
   return (

@@ -4,15 +4,16 @@
   --color-brand-navy: #0b1f3a;
   --color-brand-navy-light: #13294b;
   --color-brand-navy-deep: #071528;
-  --color-brand-electric: #0ea5e9;
-  --color-brand-electric-dark: #0284c7;
+  --color-brand-electric: #1793c9;
+  --color-brand-electric-dark: #0d6f9e;
   --color-brand-amber: #f5a623;
   --color-brand-amber-dark: #d98e0f;
-  --color-brand-cream: #f7f9fc;
-  --color-brand-dark: #101418;
+  --color-brand-paper: #f4f1e9;
+  --color-brand-dark: #14181c;
 
-  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
-  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --font-display: "Archivo", "Arial Narrow", sans-serif;
+  --font-sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 }
 
 html {
@@ -32,29 +33,25 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
-/* Fine grille technique — réservée aux fonds navy (hero, CTA) */
-.circuit-bg {
-  background-image: linear-gradient(
-      rgba(14, 165, 233, 0.05) 1px,
-      transparent 1px
-    ),
-    linear-gradient(90deg, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
-  background-size: 72px 72px;
+/* Étiquette technique façon plan/schéma — voir components/site/tech-label.tsx */
+.tech-label {
+  font-family: var(--font-mono);
+  letter-spacing: 0.14em;
 }
 
-/* Faisceau lumineux diagonal du hero */
-.hero-beam {
-  background: linear-gradient(
-    115deg,
-    transparent 0%,
-    transparent 45%,
-    rgba(14, 165, 233, 0.14) 60%,
-    rgba(14, 165, 233, 0.04) 78%,
-    transparent 100%
+/* Filet pointillé façon cotation de plan technique */
+.dash-rule {
+  background-image: repeating-linear-gradient(
+    90deg,
+    currentColor 0,
+    currentColor 5px,
+    transparent 5px,
+    transparent 11px
   );
+  height: 1px;
 }
 
 /* Apparition au défilement (voir components/site/reveal.tsx) */

@@ -22,7 +22,7 @@ export function SectionHeader({
     <Reveal className={cn("max-w-3xl", className)}>
       <p
         className={cn(
-          "mb-5 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em]",
+          "tech-label mb-5 flex items-center gap-3 text-xs font-medium uppercase",
           light ? "text-brand-electric" : "text-brand-electric-dark"
         )}
       >
@@ -34,7 +34,7 @@ export function SectionHeader({
       </p>
       <h2
         className={cn(
-          "text-3xl font-bold leading-[1.1] sm:text-4xl lg:text-[2.75rem]",
+          "text-3xl font-extrabold uppercase leading-[1.05] sm:text-4xl lg:text-[2.75rem]",
           light ? "text-white" : "text-brand-navy"
         )}
       >
@@ -44,7 +44,7 @@ export function SectionHeader({
         <p
           className={cn(
             "mt-5 max-w-2xl text-base leading-relaxed sm:text-lg",
-            light ? "text-white/65" : "text-brand-dark/65"
+            light ? "text-white/60" : "text-brand-dark/65"
           )}
         >
           {description}

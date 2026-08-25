@@ -33,7 +33,13 @@
       "subtitle": "Residential, commercial and industrial — Électricité Vision Quantique brings the rigour of a CMEQ-licensed Master Electrician to your projects, throughout Greater Montreal.",
       "ctaPrimary": "Request a free quote",
       "ctaSecondary": "Contact us",
-      "phoneIntro": "Speak directly with a Master Electrician"
+      "phoneIntro": "Speak directly with a Master Electrician",
+      "sheet": {
+        "label": "Company profile",
+        "sectors": "Sectors",
+        "zone": "Area",
+        "quote": "Quote"
+      }
     },
     "trustBar": {
       "cmeq": "CMEQ Master Electrician",
