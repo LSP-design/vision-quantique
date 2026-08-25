@@ -35,7 +35,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-  return buildMetadata({ locale, namespace: "home", pathname: "/" });
+  return { title: site.name };
 }
 
 export default async function HomePage({
