@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import {
   ArrowRight,
@@ -21,7 +20,6 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { routing, type AppPathname } from "@/i18n/routing";
-import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/site/reveal";
@@ -35,8 +33,8 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-  
-    return <p>DEBUG TEST OK</p>;
+
+  return <HomeContent />;
 }
 
 function HomeContent() {
