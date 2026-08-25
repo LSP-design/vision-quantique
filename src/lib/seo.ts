@@ -17,9 +17,18 @@ export async function buildMetadata({
   namespace: string;
   pathname: AppPathname;
 }): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace });
-  const title = t("meta.title");
-  const description = t("meta.description");
+
+    let title: string;
+    let description: string;
+    try {
+          const t = await getTranslations({ locale, namespace });
+          title = t("meta.title");
+          description = t("meta.description");
+    } catch (error) {
+          console.error("[buildMetadata] getTranslations failed:", error);
+          title = locale === "fr" ? "Électricité Vision Quantique | Maître Électricien CMEQ — Grand Montréal" : "Électricité Vision Quantique | CMEQ Master Electrician — Greater Montreal";
+          description = locale === "fr" ? "Maître Électricien certifié CMEQ au Grand Montréal. Installations électriques résidentielles, commerciales et industrielles sûres et conformes. Soumission gratuite : 514 347-6563." : "CMEQ-certified Master Electrician in Greater Montreal. Safe, code-compliant residential, commercial and industrial electrical installations. Free quote: 514 347-6563.";
+    }
 
   const languages = Object.fromEntries(
     routing.locales.map((l) => [
