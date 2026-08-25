@@ -6,7 +6,6 @@ import { ArrowRight, Building2, Factory, Home } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { routing, type AppPathname } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
-import { Card, CardContent } from "@/components/ui/card";
 import { PageHero } from "@/components/site/page-hero";
 import { Reveal } from "@/components/site/reveal";
 import { CtaSection } from "@/components/site/cta-section";
@@ -55,32 +54,41 @@ function ServicesContent() {
         subtitle={t("subtitle")}
       />
 
-      <section className="bg-brand-cream py-20">
-        <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
-          {categories.map((category, i) => (
-            <Reveal key={category.key} delay={i * 0.1}>
-              <Card className="group h-full transition-shadow hover:shadow-xl hover:shadow-brand-electric/10">
-                <CardContent className="flex h-full flex-col p-8">
-                  <span className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-brand-electric to-brand-electric-dark text-white shadow-lg shadow-brand-electric/20">
-                    <category.icon className="h-7 w-7" aria-hidden="true" />
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-8">
+          <div className="grid border-t border-brand-navy/10 lg:grid-cols-3">
+            {categories.map((category, i) => (
+              <Reveal key={category.key} delay={i * 0.08}>
+                <Link
+                  href={category.href}
+                  className="group flex h-full flex-col border-b border-brand-navy/10 py-10 pr-8 transition-colors lg:border-b-0 lg:pl-8 lg:first:pl-0 lg:[&:not(:first-child)]:border-l lg:[&:not(:first-child)]:border-brand-navy/10"
+                >
+                  <span
+                    className="text-sm font-bold text-brand-electric-dark/60"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h2 className="mb-3 text-xl font-bold text-brand-navy">
+                  <span className="mt-6 mb-5 inline-flex h-12 w-12 items-center justify-center border border-brand-navy/12 text-brand-navy transition-colors group-hover:border-brand-electric group-hover:text-brand-electric-dark">
+                    <category.icon className="h-5.5 w-5.5" aria-hidden="true" />
+                  </span>
+                  <h2 className="mb-3 text-2xl font-bold text-brand-navy">
                     {t(`${category.key}.title`)}
                   </h2>
-                  <p className="mb-6 flex-1 text-brand-dark/70">
+                  <p className="mb-8 flex-1 leading-relaxed text-brand-dark/65">
                     {t(`${category.key}.description`)}
                   </p>
-                  <Link
-                    href={category.href}
-                    className="inline-flex items-center gap-1.5 font-semibold text-brand-electric-dark transition-colors group-hover:text-brand-electric"
-                  >
+                  <span className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.1em] text-brand-electric-dark">
                     {t("viewDetails")}
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                  </Link>
-                </CardContent>
-              </Card>
-            </Reveal>
-          ))}
+                    <ArrowRight
+                      className="h-4 w-4 transition-transform group-hover:translate-x-1.5"
+                      aria-hidden="true"
+                    />
+                  </span>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

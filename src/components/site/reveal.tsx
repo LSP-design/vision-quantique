@@ -1,13 +1,12 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
-import type { ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 
-const variants: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0 },
-};
-
+/**
+ * Apparition en douceur au défilement.
+ * Robuste : le contenu est visible par défaut (SSR, JS désactivé, crawlers) ;
+ * l'état masqué n'est appliqué qu'aux éléments encore hors écran au montage.
+ */
 export function Reveal({
   children,
   delay = 0,
@@ -17,16 +16,35 @@ export function Reveal({
   delay?: number;
   className?: string;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    // Élément déjà dans la fenêtre : on n'anime pas (pas de flash de contenu caché)
+    if (el.getBoundingClientRect().top < window.innerHeight * 0.92) return;
+
+    el.style.transitionDelay = `${delay}s`;
+    el.classList.add("reveal-hidden");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add("reveal-visible");
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "-60px 0px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [delay]);
+
   return (
-    <motion.div
-      className={className}
-      variants={variants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.55, delay, ease: "easeOut" }}
-    >
+    <div ref={ref} className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }

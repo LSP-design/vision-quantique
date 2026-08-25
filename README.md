@@ -7,7 +7,7 @@ Site web professionnel bilingue (FR/EN) pour **Électricité Vision Quantique**,
 - **Next.js 15** (App Router, TypeScript, pages statiques)
 - **Tailwind CSS v4** — couleurs de marque configurées via `@theme` dans `src/app/globals.css`
 - **next-intl** — bilinguisme FR (défaut) / EN avec URLs localisées (`/fr/a-propos` ↔ `/en/about`)
-- **framer-motion** — animations d'apparition au défilement
+- Animations d'apparition au défilement en CSS + IntersectionObserver (`src/components/site/reveal.tsx`) — le contenu reste visible sans JavaScript
 - **lucide-react** — icônes
 - Composants UI inspirés de **shadcn/ui** (`src/components/ui`)
 

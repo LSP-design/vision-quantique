@@ -42,6 +42,8 @@
       "experience": "10+ years of experience"
     },
     "services": {
+      "kicker": "What we do",
+      "viewAll": "All our services",
       "title": "Our services",
       "subtitle": "Three sectors, one standard: precise, safe electrical work that complies with the Quebec Construction Code.",
       "residential": {
@@ -58,6 +60,7 @@
       }
     },
     "why": {
+      "kicker": "The CMEQ difference",
       "title": "Why choose a CMEQ Master Electrician?",
       "subtitle": "In electrical work, credibility isn't a luxury — it's a matter of safety. Here's what the CMEQ licence guarantees every client.",
       "license": {
@@ -78,6 +81,7 @@
       }
     },
     "process": {
+      "kicker": "Our process",
       "title": "How it works",
       "subtitle": "A simple, transparent process, from your first call to power-on.",
       "step1": {
@@ -102,6 +106,7 @@
       "subtitle": "Trust is earned one project at a time."
     },
     "finalCta": {
+      "kicker": "Take action",
       "title": "Have an electrical project in mind?",
       "subtitle": "Get the opinion of a CMEQ-certified Master Electrician. Free quote, fast response.",
       "cta": "Request a quote",

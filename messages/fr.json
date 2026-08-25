@@ -42,6 +42,8 @@
       "experience": "Plus de 10 ans d'expérience"
     },
     "services": {
+      "kicker": "Ce que nous faisons",
+      "viewAll": "Tous nos services",
       "title": "Nos services",
       "subtitle": "Trois secteurs, une même exigence : des travaux électriques précis, sécuritaires et conformes au Code de construction du Québec.",
       "residential": {
@@ -58,6 +60,7 @@
       }
     },
     "why": {
+      "kicker": "La différence CMEQ",
       "title": "Pourquoi choisir un Maître Électricien CMEQ ?",
       "subtitle": "En électricité, la crédibilité n'est pas un luxe — c'est une question de sécurité. Voici ce que la licence CMEQ garantit à chaque client.",
       "license": {
@@ -78,6 +81,7 @@
       }
     },
     "process": {
+      "kicker": "Notre processus",
       "title": "Comment ça marche",
       "subtitle": "Un processus simple et transparent, de votre premier appel à la mise sous tension.",
       "step1": {
@@ -102,6 +106,7 @@
       "subtitle": "La confiance se gagne un projet à la fois."
     },
     "finalCta": {
+      "kicker": "Passez à l'action",
       "title": "Un projet électrique en tête ?",
       "subtitle": "Obtenez l'avis d'un Maître Électricien certifié CMEQ. Soumission gratuite, réponse rapide.",
       "cta": "Demander une soumission",

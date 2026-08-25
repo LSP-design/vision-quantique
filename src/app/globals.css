@@ -3,6 +3,7 @@
 @theme {
   --color-brand-navy: #0b1f3a;
   --color-brand-navy-light: #13294b;
+  --color-brand-navy-deep: #071528;
   --color-brand-electric: #0ea5e9;
   --color-brand-electric-dark: #0284c7;
   --color-brand-amber: #f5a623;
@@ -23,6 +24,7 @@ body {
   color: var(--color-brand-dark);
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -30,16 +32,43 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
+  letter-spacing: -0.02em;
 }
 
-/* Motif de circuit électrique discret pour le hero */
+/* Fine grille technique — réservée aux fonds navy (hero, CTA) */
 .circuit-bg {
   background-image: linear-gradient(
-      rgba(14, 165, 233, 0.06) 1px,
+      rgba(14, 165, 233, 0.05) 1px,
       transparent 1px
     ),
-    linear-gradient(90deg, rgba(14, 165, 233, 0.06) 1px, transparent 1px);
-  background-size: 48px 48px;
+    linear-gradient(90deg, rgba(14, 165, 233, 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* Faisceau lumineux diagonal du hero */
+.hero-beam {
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    transparent 45%,
+    rgba(14, 165, 233, 0.14) 60%,
+    rgba(14, 165, 233, 0.04) 78%,
+    transparent 100%
+  );
+}
+
+/* Apparition au défilement (voir components/site/reveal.tsx) */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.55s ease-out,
+    transform 0.55s ease-out;
+}
+
+.reveal-hidden.reveal-visible {
+  opacity: 1;
+  transform: none;
 }
 
 ::selection {
