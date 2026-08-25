@@ -19,23 +19,13 @@ import "../globals.css";
 // requete - aucun impact sur le SEO, seulement sur le moment du rendu.
 export const dynamic = "force-dynamic";
 
-export async function generateMetadata({
-    params,
-}: {
-    params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-    const { locale } = await params;
-    if (!hasLocale(routing.locales, locale)) notFound();
-
-
-      return {
-              metadataBase: new URL(site.url),
-              title: {
-                  default: site.name,
-                        template: `%s | ${site.name}`,
-              },
-      };
-}
+export const metadata: Metadata = {
+      metadataBase: new URL(site.url),
+      title: {
+          default: site.name,
+              template: `%s | ${site.name}`,
+      },
+};
 
 export default async function LocaleLayout({
     children,
