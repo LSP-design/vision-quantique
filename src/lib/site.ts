@@ -11,5 +11,5 @@ export const site = {
     fr: "Grand Montréal et environs",
     en: "Greater Montreal and surrounding areas",
   },
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://electricitevisionquantique.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://electricitevisionquantique.com",
 } as const;
