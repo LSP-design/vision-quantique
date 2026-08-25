@@ -10,9 +10,6 @@ import { Footer } from "@/components/site/footer";
 import { JsonLd } from "@/components/site/json-ld";
 import "../globals.css";
 
-export function generateStaticParams() {
-    return routing.locales.map((locale) => ({ locale }));
-}
 
 // Rendu dynamique (SSR a la demande) pour tout le site : contourne une
 // instabilite de la generation de pages statiques observee uniquement sur
