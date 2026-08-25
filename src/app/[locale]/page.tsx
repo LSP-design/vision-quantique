@@ -28,16 +28,6 @@ import { Reveal } from "@/components/site/reveal";
 import { CtaSection } from "@/components/site/cta-section";
 import { Testimonials } from "@/components/site/testimonials";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
-  return { title: site.name };
-}
-
 export default async function HomePage({
   params,
 }: {
