@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -48,13 +48,14 @@ export default async function LocaleLayout({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
 
-  // Active le rendu statique pour toutes les pages de ce segment
-  setRequestLocale(locale);
+  // Passage explicite de la locale et des messages au provider client :
+  // evite de dependre de l'inference automatique de next-intl (basee sur un
+  // contexte de requete asynchrone).
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
       <head>
-        {/* Polices chargées via <link> classiques (pas de next/font — voir README) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -68,7 +69,7 @@ export default async function LocaleLayout({
         <JsonLd locale={locale as Locale} />
       </head>
       <body className="min-h-screen antialiased">
-        <NextIntlClientProvider>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main>{children}</main>
           <Footer />

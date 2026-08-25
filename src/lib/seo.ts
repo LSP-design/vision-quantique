@@ -17,9 +17,20 @@ export async function buildMetadata({
   namespace: string;
   pathname: AppPathname;
 }): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace });
-  const title = t("meta.title");
-  const description = t("meta.description");
+  // Repli défensif si le chargement des traductions échoue au build
+  // (contourne un plantage observé sur l'infra de build Vercel).
+  let title: string;
+  let description: string;
+  try {
+    const t = await getTranslations({ locale, namespace });
+    title = t("meta.title");
+    description = t("meta.description");
+  } catch (error) {
+    console.error("[buildMetadata] getTranslations failed:", error);
+    title = site.name;
+    description =
+      locale === "fr" ? site.serviceArea.fr : site.serviceArea.en;
+  }
 
   const languages = Object.fromEntries(
     routing.locales.map((l) => [

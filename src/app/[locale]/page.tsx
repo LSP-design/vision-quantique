@@ -1,7 +1,5 @@
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 import {
   ArrowRight,
   Building2,
@@ -12,23 +10,12 @@ import {
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { routing, type AppPathname } from "@/i18n/routing";
-import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { LogoMark } from "@/components/site/logo";
 import { Reveal } from "@/components/site/reveal";
 import { SectionHeader } from "@/components/site/section-header";
 import { CtaSection } from "@/components/site/cta-section";
 import { Testimonials } from "@/components/site/testimonials";
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) notFound();
-  return buildMetadata({ locale, namespace: "home", pathname: "/" });
-}
 
 export default async function HomePage({
   params,
@@ -37,7 +24,6 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-  setRequestLocale(locale);
 
   return <HomeContent />;
 }
