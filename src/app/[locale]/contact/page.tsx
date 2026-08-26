@@ -43,14 +43,14 @@ function ContactContent() {
         subtitle={t("subtitle")}
       />
 
-      <section className="bg-white py-24">
-        <div className="mx-auto grid max-w-7xl items-start gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-10 xl:px-8">
+      <section className="bg-brand-soft py-24">
+        <div className="mx-auto grid max-w-7xl items-start gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-8">
           {/* Coordonnées */}
           <Reveal className="lg:col-span-4">
-            <h2 className="mb-2 text-xl font-extrabold uppercase text-brand-navy">
+            <h2 className="mb-2 text-xl font-extrabold text-brand-navy">
               {t("info.title")}
             </h2>
-            <div className="border-t border-brand-navy/12">
+            <div className="border-t border-brand-navy/10">
               <div className="flex items-start gap-4 border-b border-brand-navy/10 py-6">
                 <Phone
                   className="mt-1 h-5 w-5 shrink-0 text-brand-electric-dark"
@@ -62,8 +62,7 @@ function ContactContent() {
                   </p>
                   <a
                     href={site.phoneHref}
-                    className="mt-1 block text-xl font-bold text-brand-navy transition-colors hover:text-brand-electric-dark"
-                    style={{ fontFamily: "var(--font-display)" }}
+                    className="mt-1 block text-xl font-extrabold text-brand-navy transition-colors hover:text-brand-electric-dark"
                   >
                     {site.phone}
                   </a>
@@ -130,13 +129,11 @@ function ContactContent() {
 
           {/* Formulaire */}
           <Reveal delay={0.1} className="lg:col-span-8">
-            <div className="border border-brand-navy/12">
-              <div className="border-b border-brand-navy/12 px-8 py-4 sm:px-10">
-                <span className="tech-label text-[0.7rem] font-medium uppercase text-brand-dark/45">
-                  {t("form.title")}
-                </span>
-              </div>
+            <div className="rounded-3xl border border-brand-navy/8 bg-white shadow-lg shadow-brand-navy/8">
               <div className="p-8 sm:p-10">
+                <h2 className="mb-8 text-xl font-extrabold text-brand-navy">
+                  {t("form.title")}
+                </h2>
                 <ContactForm />
               </div>
             </div>

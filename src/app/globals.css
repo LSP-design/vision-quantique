@@ -3,17 +3,15 @@
 @theme {
   --color-brand-navy: #0b1f3a;
   --color-brand-navy-light: #13294b;
-  --color-brand-navy-deep: #071528;
-  --color-brand-electric: #1793c9;
-  --color-brand-electric-dark: #0d6f9e;
+  --color-brand-navy-deep: #081831;
+  --color-brand-electric: #0ea5e9;
+  --color-brand-electric-dark: #0284c7;
   --color-brand-amber: #f5a623;
-  --color-brand-amber-dark: #d98e0f;
-  --color-brand-paper: #f4f1e9;
-  --color-brand-dark: #14181c;
+  --color-brand-amber-dark: #e08c00;
+  --color-brand-soft: #f5f8fc;
+  --color-brand-dark: #16202b;
 
-  --font-display: "Archivo", "Arial Narrow", sans-serif;
-  --font-sans: "IBM Plex Sans", "Segoe UI", sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-sans: "Plus Jakarta Sans", "Segoe UI", sans-serif;
 }
 
 html {
@@ -32,40 +30,144 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-display);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.025em;
 }
 
-/* Étiquette technique façon plan/schéma — voir components/site/tech-label.tsx */
-.tech-label {
-  font-family: var(--font-mono);
-  letter-spacing: 0.14em;
+/* ————— Animations d'entrée du hero (CSS pur, sans JS) ————— */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-/* Filet pointillé façon cotation de plan technique */
-.dash-rule {
-  background-image: repeating-linear-gradient(
-    90deg,
-    currentColor 0,
-    currentColor 5px,
-    transparent 5px,
-    transparent 11px
-  );
-  height: 1px;
+.hero-enter {
+  opacity: 0;
+  animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* Apparition au défilement (voir components/site/reveal.tsx) */
+/* ————— Flottement doux (cartes du hero) ————— */
+@keyframes floatSoft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-soft {
+  animation: floatSoft 6s ease-in-out infinite;
+}
+
+/* ————— Indicateur de défilement ————— */
+@keyframes scrollBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.4;
+  }
+}
+
+.scroll-bounce {
+  animation: scrollBounce 1.8s ease-in-out infinite;
+}
+
+/* ————— Bande défilante ————— */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* ————— Courant électrique animé (illustrations SVG) ————— */
+@keyframes currentFlow {
+  to {
+    stroke-dashoffset: -60;
+  }
+}
+
+.current-line {
+  stroke-dasharray: 8 22;
+  animation: currentFlow 1.6s linear infinite;
+}
+
+/* ————— Fenêtres qui s'allument (illustration commerciale) ————— */
+@keyframes windowGlow {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.window-glow {
+  animation: windowGlow 3.2s ease-in-out infinite;
+}
+
+/* ————— Pulsation lumineuse ————— */
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.glow-pulse {
+  animation: glowPulse 2.4s ease-in-out infinite;
+}
+
+/* ————— Apparition au défilement (voir components/site/reveal.tsx) ————— */
 .reveal-hidden {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(26px);
   transition:
-    opacity 0.55s ease-out,
-    transform 0.55s ease-out;
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal-hidden.reveal-visible {
   opacity: 1;
   transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter,
+  .float-soft,
+  .scroll-bounce,
+  .marquee-track,
+  .current-line,
+  .window-glow,
+  .glow-pulse {
+    animation: none;
+  }
+  .hero-enter {
+    opacity: 1;
+  }
 }
 
 ::selection {

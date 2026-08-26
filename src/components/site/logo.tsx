@@ -34,16 +34,15 @@ export function Logo({
       <span className="flex flex-col leading-tight">
         <span
           className={cn(
-            "text-lg font-extrabold uppercase tracking-tight",
+            "text-lg font-extrabold tracking-tight",
             light ? "text-white" : "text-brand-navy"
           )}
-          style={{ fontFamily: "var(--font-display)" }}
         >
           Électricité
         </span>
         <span
           className={cn(
-            "tech-label text-[0.6rem] font-medium uppercase",
+            "text-[0.7rem] font-bold uppercase tracking-[0.16em]",
             light ? "text-brand-electric" : "text-brand-electric-dark"
           )}
         >

@@ -3,6 +3,7 @@
     "companyName": "Électricité Vision Quantique",
     "phone": "514 347-6563",
     "requestQuote": "Request a free quote",
+    "freeQuoteShort": "Free quote",
     "contactUs": "Contact us",
     "learnMore": "Learn more",
     "callUs": "Call us",
@@ -39,7 +40,15 @@
         "sectors": "Sectors",
         "zone": "Area",
         "quote": "Quote"
-      }
+      },
+      "scroll": "Discover",
+      "floatingCard": "Free quote"
+    },
+    "stats": {
+      "years": "Years of experience",
+      "sectors": "Sectors served",
+      "compliance": "Code-compliant work",
+      "quote": "For a quote"
     },
     "trustBar": {
       "cmeq": "CMEQ Master Electrician",

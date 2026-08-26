@@ -9,7 +9,7 @@ export type ServiceItem = { key: string; icon: LucideIcon };
 
 /**
  * Gabarit commun aux trois pages de services détaillées
- * (résidentiel, commercial, industriel) — fiche technique numérotée.
+ * (résidentiel, commercial, industriel).
  */
 export function ServiceDetail({
   namespace,
@@ -29,36 +29,28 @@ export function ServiceDetail({
         subtitle={t("subtitle")}
       />
 
-      <section className="bg-white py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-8">
+      <section className="bg-brand-soft py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
+            center
             kicker={t("badge")}
             title={t("servicesTitle")}
             className="mb-14"
           />
 
-          <div className="grid border-t border-brand-navy/12 md:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {items.map((item, i) => (
-              <Reveal key={item.key} delay={(i % 2) * 0.06}>
-                <article className="flex h-full items-start gap-4 border-b border-brand-navy/12 py-7 md:pr-10 md:odd:pr-10 md:even:pl-10 md:even:border-l md:even:border-brand-navy/12">
-                  <span
-                    className="pt-0.5 text-sm font-bold text-brand-electric-dark/50"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    {String(i + 1).padStart(2, "0")}
+              <Reveal key={item.key} delay={(i % 4) * 0.08}>
+                <article className="h-full rounded-2xl border border-brand-navy/8 bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-brand-navy/8">
+                  <span className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-electric/10 text-brand-electric-dark">
+                    <item.icon className="h-6 w-6" aria-hidden="true" />
                   </span>
-                  <item.icon
-                    className="h-5 w-5 shrink-0 text-brand-electric-dark"
-                    aria-hidden="true"
-                  />
-                  <div>
-                    <h3 className="mb-1.5 text-lg font-extrabold uppercase text-brand-navy">
-                      {t(`items.${item.key}.title`)}
-                    </h3>
-                    <p className="text-sm leading-relaxed text-brand-dark/65">
-                      {t(`items.${item.key}.description`)}
-                    </p>
-                  </div>
+                  <h3 className="mb-2 text-lg font-extrabold text-brand-navy">
+                    {t(`items.${item.key}.title`)}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-brand-dark/65">
+                    {t(`items.${item.key}.description`)}
+                  </p>
                 </article>
               </Reveal>
             ))}

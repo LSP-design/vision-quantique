@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 import { MapPin, Phone } from "lucide-react";
 import { site } from "@/lib/site";
-import { Reveal } from "./reveal";
-import { BlueprintMark } from "./blueprint-mark";
 
 export function PageHero({
   badge,
@@ -16,43 +14,48 @@ export function PageHero({
   const tCommon = useTranslations("common");
 
   return (
-    <section className="relative bg-brand-navy-deep">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-8">
-        <div className="relative py-20 lg:py-24">
-          <BlueprintMark className="absolute -top-1 left-0" />
-          <Reveal>
-            <p className="tech-label mb-6 flex items-center gap-3 text-xs font-medium uppercase text-brand-electric">
-              <span className="h-px w-10 bg-brand-electric/60" aria-hidden="true" />
-              {badge}
-            </p>
-            <h1 className="mb-6 max-w-3xl text-4xl font-extrabold uppercase leading-[1.05] text-white sm:text-5xl lg:text-[3.25rem]">
-              {title}
-            </h1>
-            <p className="max-w-2xl text-base leading-relaxed text-white/65 sm:text-lg">
-              {subtitle}
-            </p>
-          </Reveal>
+    <section className="relative overflow-hidden bg-gradient-to-br from-brand-navy-deep via-brand-navy to-brand-navy-light">
+      <div
+        className="pointer-events-none absolute -top-24 right-[-8%] h-80 w-80 rounded-full bg-brand-electric/15 blur-3xl"
+        aria-hidden="true"
+      />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="py-18 lg:py-22">
+          <span
+            className="hero-enter inline-block rounded-full bg-brand-electric/15 px-4 py-1.5 text-sm font-bold text-brand-electric"
+            style={{ animationDelay: "0.05s" }}
+          >
+            {badge}
+          </span>
+          <h1
+            className="hero-enter mt-5 max-w-3xl text-4xl font-extrabold leading-[1.1] text-white sm:text-5xl"
+            style={{ animationDelay: "0.15s" }}
+          >
+            {title}
+          </h1>
+          <p
+            className="hero-enter mt-5 max-w-2xl text-lg leading-relaxed text-white/70"
+            style={{ animationDelay: "0.28s" }}
+          >
+            {subtitle}
+          </p>
         </div>
 
-        <div className="dash-rule text-white/20" aria-hidden="true" />
-
-        <div className="flex flex-wrap items-center justify-between gap-4 py-5">
-          <p className="tech-label inline-flex items-center gap-2 text-[0.75rem] font-medium uppercase text-white/55">
+        <div
+          className="hero-enter flex flex-wrap items-center justify-between gap-4 border-t border-white/10 py-5"
+          style={{ animationDelay: "0.4s" }}
+        >
+          <p className="inline-flex items-center gap-2 text-sm font-semibold text-white/60">
             <MapPin className="h-4 w-4 text-brand-electric" aria-hidden="true" />
             {/* TODO: confirmer la zone de service exacte avec le client */}
             {tCommon("serviceArea")}
           </p>
           <a
             href={site.phoneHref}
-            className="group inline-flex items-center gap-2.5 text-white transition-colors hover:text-brand-electric"
+            className="inline-flex items-center gap-2.5 rounded-full border border-white/15 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:border-brand-electric hover:text-brand-electric"
           >
             <Phone className="h-4 w-4 text-brand-electric" aria-hidden="true" />
-            <span
-              className="text-lg font-bold tracking-wide"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              {site.phone}
-            </span>
+            {site.phone}
           </a>
         </div>
       </div>

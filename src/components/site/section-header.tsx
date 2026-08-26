@@ -2,39 +2,40 @@ import { cn } from "@/lib/utils";
 import { Reveal } from "./reveal";
 
 /**
- * En-tête de section éditorial : surtitre avec filet, titre, description.
- * Aligné à gauche par défaut — jamais centré, pour éviter l'effet gabarit.
+ * En-tête de section : pastille colorée, titre chaleureux, description.
  */
 export function SectionHeader({
   kicker,
   title,
   description,
   light = false,
+  center = false,
   className,
 }: {
   kicker: string;
   title: string;
   description?: string;
   light?: boolean;
+  center?: boolean;
   className?: string;
 }) {
   return (
-    <Reveal className={cn("max-w-3xl", className)}>
-      <p
+    <Reveal
+      className={cn("max-w-3xl", center && "mx-auto text-center", className)}
+    >
+      <span
         className={cn(
-          "tech-label mb-5 flex items-center gap-3 text-xs font-medium uppercase",
-          light ? "text-brand-electric" : "text-brand-electric-dark"
+          "mb-4 inline-block rounded-full px-4 py-1.5 text-[0.8125rem] font-bold",
+          light
+            ? "bg-brand-electric/15 text-brand-electric"
+            : "bg-brand-electric/10 text-brand-electric-dark"
         )}
       >
-        <span
-          className="h-px w-10 bg-current opacity-60"
-          aria-hidden="true"
-        />
         {kicker}
-      </p>
+      </span>
       <h2
         className={cn(
-          "text-3xl font-extrabold uppercase leading-[1.05] sm:text-4xl lg:text-[2.75rem]",
+          "text-3xl font-extrabold leading-[1.12] sm:text-4xl lg:text-[2.6rem]",
           light ? "text-white" : "text-brand-navy"
         )}
       >
@@ -43,8 +44,10 @@ export function SectionHeader({
       {description && (
         <p
           className={cn(
-            "mt-5 max-w-2xl text-base leading-relaxed sm:text-lg",
-            light ? "text-white/60" : "text-brand-dark/65"
+            "mt-4 text-base leading-relaxed sm:text-lg",
+            center && "mx-auto",
+            light ? "text-white/65" : "text-brand-dark/65",
+            "max-w-2xl"
           )}
         >
           {description}

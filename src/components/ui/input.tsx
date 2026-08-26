@@ -2,7 +2,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const inputClasses =
-  "flex w-full border border-brand-navy/20 bg-white px-4 py-2.5 text-sm text-brand-dark placeholder:text-brand-dark/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-electric focus-visible:border-transparent disabled:opacity-50";
+  "flex w-full rounded-xl border border-brand-navy/15 bg-white px-4 py-3 text-sm text-brand-dark placeholder:text-brand-dark/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-electric focus-visible:border-transparent disabled:opacity-50";
 
 const Input = React.forwardRef<
   HTMLInputElement,
@@ -28,7 +28,7 @@ const Select = React.forwardRef<
   HTMLSelectElement,
   React.SelectHTMLAttributes<HTMLSelectElement>
 >(({ className, ...props }, ref) => (
-  <select ref={ref} className={cn(inputClasses, "h-11", className)} {...props} />
+  <select ref={ref} className={cn(inputClasses, "h-12", className)} {...props} />
 ));
 Select.displayName = "Select";
 
@@ -39,7 +39,7 @@ const Label = React.forwardRef<
   <label
     ref={ref}
     className={cn(
-      "tech-label mb-1.5 block text-[0.7rem] font-medium uppercase text-brand-navy/70",
+      "mb-1.5 block text-sm font-semibold text-brand-navy",
       className
     )}
     {...props}

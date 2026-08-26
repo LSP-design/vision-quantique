@@ -9,6 +9,11 @@ import { buildMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/site/page-hero";
 import { Reveal } from "@/components/site/reveal";
 import { CtaSection } from "@/components/site/cta-section";
+import {
+  CommercialArt,
+  IndustrialArt,
+  ResidentialArt,
+} from "@/components/site/sector-art";
 
 export async function generateMetadata({
   params,
@@ -39,10 +44,11 @@ function ServicesContent() {
   const categories: {
     key: "residential" | "commercial" | "industrial";
     href: AppPathname;
+    art: React.ReactNode;
   }[] = [
-    { key: "residential", href: "/services/residentiel" },
-    { key: "commercial", href: "/services/commercial" },
-    { key: "industrial", href: "/services/industriel" },
+    { key: "residential", href: "/services/residentiel", art: <ResidentialArt /> },
+    { key: "commercial", href: "/services/commercial", art: <CommercialArt /> },
+    { key: "industrial", href: "/services/industriel", art: <IndustrialArt /> },
   ];
 
   return (
@@ -53,38 +59,35 @@ function ServicesContent() {
         subtitle={t("subtitle")}
       />
 
-      <section className="bg-white py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-8">
-          <div className="grid border-t border-brand-navy/12 lg:grid-cols-3">
-            {categories.map((category, i) => (
-              <Reveal key={category.key} delay={i * 0.08}>
-                <Link
-                  href={category.href}
-                  className="group flex h-full flex-col border-b border-brand-navy/12 py-10 pr-8 transition-colors lg:border-b-0 lg:pl-8 lg:first:pl-0 lg:[&:not(:first-child)]:border-l lg:[&:not(:first-child)]:border-brand-navy/12"
-                >
-                  <span
-                    className="text-6xl font-extrabold text-brand-navy/[0.08] transition-colors group-hover:text-brand-electric/15"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h2 className="-mt-3 mb-3 text-2xl font-extrabold uppercase text-brand-navy">
+      <section className="bg-brand-soft py-24">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+          {categories.map((category, i) => (
+            <Reveal key={category.key} delay={i * 0.1}>
+              <Link
+                href={category.href}
+                className="group flex h-full flex-col overflow-hidden rounded-3xl border border-brand-navy/8 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-navy/10"
+              >
+                <div className="h-52 bg-gradient-to-br from-brand-navy-deep to-brand-navy-light p-6">
+                  {category.art}
+                </div>
+                <div className="flex flex-1 flex-col p-7">
+                  <h2 className="mb-2.5 text-2xl font-extrabold text-brand-navy">
                     {t(`${category.key}.title`)}
                   </h2>
-                  <p className="mb-8 flex-1 leading-relaxed text-brand-dark/65">
+                  <p className="mb-6 flex-1 leading-relaxed text-brand-dark/65">
                     {t(`${category.key}.description`)}
                   </p>
-                  <span className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.1em] text-brand-electric-dark">
+                  <span className="inline-flex items-center gap-2 font-bold text-brand-electric-dark">
                     {t("viewDetails")}
                     <ArrowRight
                       className="h-4 w-4 transition-transform group-hover:translate-x-1.5"
                       aria-hidden="true"
                     />
                   </span>
-                </Link>
-              </Reveal>
-            ))}
-          </div>
+                </div>
+              </Link>
+            </Reveal>
+          ))}
         </div>
       </section>
 

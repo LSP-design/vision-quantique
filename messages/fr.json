@@ -3,6 +3,7 @@
     "companyName": "Électricité Vision Quantique",
     "phone": "514 347-6563",
     "requestQuote": "Demander une soumission gratuite",
+    "freeQuoteShort": "Soumission",
     "contactUs": "Nous joindre",
     "learnMore": "En savoir plus",
     "callUs": "Appelez-nous",
@@ -39,7 +40,15 @@
         "sectors": "Secteurs",
         "zone": "Zone",
         "quote": "Soumission"
-      }
+      },
+      "scroll": "Découvrir",
+      "floatingCard": "Soumission gratuite"
+    },
+    "stats": {
+      "years": "Années d'expérience",
+      "sectors": "Secteurs desservis",
+      "compliance": "Travaux conformes au Code",
+      "quote": "Pour une soumission"
     },
     "trustBar": {
       "cmeq": "Maître Électricien CMEQ",

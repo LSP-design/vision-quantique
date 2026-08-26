@@ -11,15 +11,14 @@ export function Footer() {
 
   return (
     <footer className="bg-brand-navy-deep text-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-8">
-        {/* Rangée principale */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 py-16 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Logo light />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/60">
               {t("tagline")}
             </p>
-            <p className="mt-6 inline-flex items-start gap-2.5 border border-white/12 bg-white/[0.04] px-4 py-3 text-[0.8125rem] font-medium text-white/80">
+            <p className="mt-6 inline-flex items-start gap-2.5 rounded-2xl bg-white/[0.06] px-5 py-3.5 text-sm font-semibold text-white/85">
               <ShieldCheck
                 className="mt-0.5 h-4 w-4 shrink-0 text-brand-electric"
                 aria-hidden="true"
@@ -29,27 +28,27 @@ export function Footer() {
           </div>
 
           <nav aria-label={t("navigation")} className="lg:col-span-2">
-            <h3 className="mb-5 text-xs font-bold uppercase tracking-[0.18em] text-white/40">
+            <h3 className="mb-5 text-sm font-extrabold text-white/40">
               {t("navigation")}
             </h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm font-medium">
               <li>
-                <Link href="/" className="text-white/75 transition-colors hover:text-brand-electric">
+                <Link href="/" className="text-white/70 transition-colors hover:text-brand-electric">
                   {tNav("home")}
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-white/75 transition-colors hover:text-brand-electric">
+                <Link href="/services" className="text-white/70 transition-colors hover:text-brand-electric">
                   {tNav("services")}
                 </Link>
               </li>
               <li>
-                <Link href="/a-propos" className="text-white/75 transition-colors hover:text-brand-electric">
+                <Link href="/a-propos" className="text-white/70 transition-colors hover:text-brand-electric">
                   {tNav("about")}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-white/75 transition-colors hover:text-brand-electric">
+                <Link href="/contact" className="text-white/70 transition-colors hover:text-brand-electric">
                   {tNav("contact")}
                 </Link>
               </li>
@@ -57,14 +56,14 @@ export function Footer() {
           </nav>
 
           <nav aria-label={t("services")} className="lg:col-span-2">
-            <h3 className="mb-5 text-xs font-bold uppercase tracking-[0.18em] text-white/40">
+            <h3 className="mb-5 text-sm font-extrabold text-white/40">
               {t("services")}
             </h3>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-sm font-medium">
               <li>
                 <Link
                   href="/services/residentiel"
-                  className="text-white/75 transition-colors hover:text-brand-electric"
+                  className="text-white/70 transition-colors hover:text-brand-electric"
                 >
                   {tNav("residential")}
                 </Link>
@@ -72,7 +71,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services/commercial"
-                  className="text-white/75 transition-colors hover:text-brand-electric"
+                  className="text-white/70 transition-colors hover:text-brand-electric"
                 >
                   {tNav("commercial")}
                 </Link>
@@ -80,7 +79,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services/industriel"
-                  className="text-white/75 transition-colors hover:text-brand-electric"
+                  className="text-white/70 transition-colors hover:text-brand-electric"
                 >
                   {tNav("industrial")}
                 </Link>
@@ -89,10 +88,10 @@ export function Footer() {
           </nav>
 
           <div className="lg:col-span-3">
-            <h3 className="mb-5 text-xs font-bold uppercase tracking-[0.18em] text-white/40">
+            <h3 className="mb-5 text-sm font-extrabold text-white/40">
               {t("contact")}
             </h3>
-            <ul className="space-y-3.5 text-sm">
+            <ul className="space-y-3.5 text-sm font-medium">
               <li>
                 <a
                   href={site.phoneHref}
@@ -105,13 +104,13 @@ export function Footer() {
               <li>
                 <a
                   href={site.emailHref}
-                  className="flex items-center gap-2.5 text-white/75 transition-colors hover:text-brand-electric"
+                  className="flex items-center gap-2.5 text-white/70 transition-colors hover:text-brand-electric"
                 >
                   <Mail className="h-4 w-4 shrink-0 text-brand-electric" aria-hidden="true" />
                   {site.email}
                 </a>
               </li>
-              <li className="flex items-center gap-2.5 text-white/75">
+              <li className="flex items-center gap-2.5 text-white/70">
                 <MapPin className="h-4 w-4 shrink-0 text-brand-electric" aria-hidden="true" />
                 {/* TODO: confirmer la zone de service exacte avec le client */}
                 {tCommon("serviceArea")}
@@ -120,7 +119,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Rangée légale */}
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 py-6 text-xs text-white/45">
           <p>
             © {new Date().getFullYear()} {tCommon("companyName")}. {t("rights")}

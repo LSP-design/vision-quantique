@@ -7,6 +7,7 @@ import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
+import { MobileCtaBar } from "@/components/site/mobile-cta-bar";
 import { JsonLd } from "@/components/site/json-ld";
 import "../globals.css";
 
@@ -63,7 +64,7 @@ export default async function LocaleLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
         <JsonLd locale={locale as Locale} />
@@ -73,6 +74,7 @@ export default async function LocaleLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <MobileCtaBar />
         </NextIntlClientProvider>
       </body>
     </html>
